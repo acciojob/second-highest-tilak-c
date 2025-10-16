@@ -9,7 +9,15 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
+			let nums1=new Set(arr);
+			let nums2=[...nums1]
+			if(nums2.length<2){
+			    console.log(-Infinity)
+			}
+			else{
+			    nums2.sort();
+			    console.log(nums2[nums2.length-2])
+			}
 			
 		}
 
